@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6975081E241513BA00B694E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6975081D241513BA00B694E0 /* AppDelegate.m */; };
+		69750821241513BA00B694E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69750820241513BA00B694E0 /* ViewController.m */; };
+		69750823241513BB00B694E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69750822241513BB00B694E0 /* Assets.xcassets */; };
+		69750826241513BB00B694E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69750824241513BB00B694E0 /* Main.storyboard */; };
+		69750829241513BB00B694E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69750828241513BB00B694E0 /* main.m */; };
+		69750834241513BB00B694E0 /* WNetSpeedSampleCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69750833241513BB00B694E0 /* WNetSpeedSampleCodeTests.m */; };
+		6975083F241513BB00B694E0 /* WNetSpeedSampleCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6975083E241513BB00B694E0 /* WNetSpeedSampleCodeUITests.m */; };
+		69D62B7624175E0300B1759F /* WNetSpeed.c in Sources */ = {isa = PBXBuildFile; fileRef = 69D62B7324175E0300B1759F /* WNetSpeed.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69750830241513BB00B694E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69750811241513BA00B694E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69750818241513BA00B694E0;
+			remoteInfo = WNetSpeedSampleCode;
+		};
+		6975083B241513BB00B694E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69750811241513BA00B694E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69750818241513BA00B694E0;
+			remoteInfo = WNetSpeedSampleCode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		69750819241513BA00B694E0 /* WNetSpeedSampleCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WNetSpeedSampleCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6975081C241513BA00B694E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6975081D241513BA00B694E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6975081F241513BA00B694E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		69750820241513BA00B694E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		69750822241513BB00B694E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69750825241513BB00B694E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69750827241513BB00B694E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69750828241513BB00B694E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6975082A241513BB00B694E0 /* WNetSpeedSampleCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WNetSpeedSampleCode.entitlements; sourceTree = "<group>"; };
+		6975082F241513BB00B694E0 /* WNetSpeedSampleCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WNetSpeedSampleCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69750833241513BB00B694E0 /* WNetSpeedSampleCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WNetSpeedSampleCodeTests.m; sourceTree = "<group>"; };
+		69750835241513BB00B694E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6975083A241513BB00B694E0 /* WNetSpeedSampleCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WNetSpeedSampleCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6975083E241513BB00B694E0 /* WNetSpeedSampleCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WNetSpeedSampleCodeUITests.m; sourceTree = "<group>"; };
+		69750840241513BB00B694E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69D62B7224175E0300B1759F /* WNetSpeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNetSpeed.h; sourceTree = "<group>"; };
+		69D62B7324175E0300B1759F /* WNetSpeed.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = WNetSpeed.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69750816241513BA00B694E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6975082C241513BB00B694E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69750837241513BB00B694E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69750810241513BA00B694E0 = {
+			isa = PBXGroup;
+			children = (
+				69D62B7024175E0300B1759F /* WNetSpeed */,
+				6975081B241513BA00B694E0 /* WNetSpeedSampleCode */,
+				69750832241513BB00B694E0 /* WNetSpeedSampleCodeTests */,
+				6975083D241513BB00B694E0 /* WNetSpeedSampleCodeUITests */,
+				6975081A241513BA00B694E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6975081A241513BA00B694E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69750819241513BA00B694E0 /* WNetSpeedSampleCode.app */,
+				6975082F241513BB00B694E0 /* WNetSpeedSampleCodeTests.xctest */,
+				6975083A241513BB00B694E0 /* WNetSpeedSampleCodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6975081B241513BA00B694E0 /* WNetSpeedSampleCode */ = {
+			isa = PBXGroup;
+			children = (
+				6975081C241513BA00B694E0 /* AppDelegate.h */,
+				6975081D241513BA00B694E0 /* AppDelegate.m */,
+				6975081F241513BA00B694E0 /* ViewController.h */,
+				69750820241513BA00B694E0 /* ViewController.m */,
+				69750822241513BB00B694E0 /* Assets.xcassets */,
+				69750824241513BB00B694E0 /* Main.storyboard */,
+				69750827241513BB00B694E0 /* Info.plist */,
+				69750828241513BB00B694E0 /* main.m */,
+				6975082A241513BB00B694E0 /* WNetSpeedSampleCode.entitlements */,
+			);
+			path = WNetSpeedSampleCode;
+			sourceTree = "<group>";
+		};
+		69750832241513BB00B694E0 /* WNetSpeedSampleCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				69750833241513BB00B694E0 /* WNetSpeedSampleCodeTests.m */,
+				69750835241513BB00B694E0 /* Info.plist */,
+			);
+			path = WNetSpeedSampleCodeTests;
+			sourceTree = "<group>";
+		};
+		6975083D241513BB00B694E0 /* WNetSpeedSampleCodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6975083E241513BB00B694E0 /* WNetSpeedSampleCodeUITests.m */,
+				69750840241513BB00B694E0 /* Info.plist */,
+			);
+			path = WNetSpeedSampleCodeUITests;
+			sourceTree = "<group>";
+		};
+		69D62B7024175E0300B1759F /* WNetSpeed */ = {
+			isa = PBXGroup;
+			children = (
+				69D62B7224175E0300B1759F /* WNetSpeed.h */,
+				69D62B7324175E0300B1759F /* WNetSpeed.c */,
+			);
+			name = WNetSpeed;
+			path = ../WNetSpeed;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69750818241513BA00B694E0 /* WNetSpeedSampleCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69750843241513BB00B694E0 /* Build configuration list for PBXNativeTarget "WNetSpeedSampleCode" */;
+			buildPhases = (
+				69750815241513BA00B694E0 /* Sources */,
+				69750816241513BA00B694E0 /* Frameworks */,
+				69750817241513BA00B694E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WNetSpeedSampleCode;
+			productName = WNetSpeedSampleCode;
+			productReference = 69750819241513BA00B694E0 /* WNetSpeedSampleCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6975082E241513BB00B694E0 /* WNetSpeedSampleCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69750846241513BB00B694E0 /* Build configuration list for PBXNativeTarget "WNetSpeedSampleCodeTests" */;
+			buildPhases = (
+				6975082B241513BB00B694E0 /* Sources */,
+				6975082C241513BB00B694E0 /* Frameworks */,
+				6975082D241513BB00B694E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69750831241513BB00B694E0 /* PBXTargetDependency */,
+			);
+			name = WNetSpeedSampleCodeTests;
+			productName = WNetSpeedSampleCodeTests;
+			productReference = 6975082F241513BB00B694E0 /* WNetSpeedSampleCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69750839241513BB00B694E0 /* WNetSpeedSampleCodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69750849241513BB00B694E0 /* Build configuration list for PBXNativeTarget "WNetSpeedSampleCodeUITests" */;
+			buildPhases = (
+				69750836241513BB00B694E0 /* Sources */,
+				69750837241513BB00B694E0 /* Frameworks */,
+				69750838241513BB00B694E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6975083C241513BB00B694E0 /* PBXTargetDependency */,
+			);
+			name = WNetSpeedSampleCodeUITests;
+			productName = WNetSpeedSampleCodeUITests;
+			productReference = 6975083A241513BB00B694E0 /* WNetSpeedSampleCodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69750811241513BA00B694E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "김현준";
+				TargetAttributes = {
+					69750818241513BA00B694E0 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					6975082E241513BB00B694E0 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 69750818241513BA00B694E0;
+					};
+					69750839241513BB00B694E0 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 69750818241513BA00B694E0;
+					};
+				};
+			};
+			buildConfigurationList = 69750814241513BA00B694E0 /* Build configuration list for PBXProject "WNetSpeedSampleCode" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69750810241513BA00B694E0;
+			productRefGroup = 6975081A241513BA00B694E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69750818241513BA00B694E0 /* WNetSpeedSampleCode */,
+				6975082E241513BB00B694E0 /* WNetSpeedSampleCodeTests */,
+				69750839241513BB00B694E0 /* WNetSpeedSampleCodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69750817241513BA00B694E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69750823241513BB00B694E0 /* Assets.xcassets in Resources */,
+				69750826241513BB00B694E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6975082D241513BB00B694E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69750838241513BB00B694E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69750815241513BA00B694E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69750821241513BA00B694E0 /* ViewController.m in Sources */,
+				69750829241513BB00B694E0 /* main.m in Sources */,
+				6975081E241513BA00B694E0 /* AppDelegate.m in Sources */,
+				69D62B7624175E0300B1759F /* WNetSpeed.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6975082B241513BB00B694E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69750834241513BB00B694E0 /* WNetSpeedSampleCodeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69750836241513BB00B694E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6975083F241513BB00B694E0 /* WNetSpeedSampleCodeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69750831241513BB00B694E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69750818241513BA00B694E0 /* WNetSpeedSampleCode */;
+			targetProxy = 69750830241513BB00B694E0 /* PBXContainerItemProxy */;
+		};
+		6975083C241513BB00B694E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69750818241513BA00B694E0 /* WNetSpeedSampleCode */;
+			targetProxy = 6975083B241513BB00B694E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69750824241513BB00B694E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69750825241513BB00B694E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69750841241513BB00B694E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		69750842241513BB00B694E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		69750844241513BB00B694E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WNetSpeedSampleCode/WNetSpeedSampleCode.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L6QE64PFLN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = WNetSpeedSampleCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wally.WNetSpeedSampleCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		69750845241513BB00B694E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WNetSpeedSampleCode/WNetSpeedSampleCode.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L6QE64PFLN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = WNetSpeedSampleCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wally.WNetSpeedSampleCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		69750847241513BB00B694E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L6QE64PFLN;
+				INFOPLIST_FILE = WNetSpeedSampleCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = wally.WNetSpeedSampleCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WNetSpeedSampleCode.app/Contents/MacOS/WNetSpeedSampleCode";
+			};
+			name = Debug;
+		};
+		69750848241513BB00B694E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L6QE64PFLN;
+				INFOPLIST_FILE = WNetSpeedSampleCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = wally.WNetSpeedSampleCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WNetSpeedSampleCode.app/Contents/MacOS/WNetSpeedSampleCode";
+			};
+			name = Release;
+		};
+		6975084A241513BB00B694E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L6QE64PFLN;
+				INFOPLIST_FILE = WNetSpeedSampleCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wally.WNetSpeedSampleCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WNetSpeedSampleCode;
+			};
+			name = Debug;
+		};
+		6975084B241513BB00B694E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L6QE64PFLN;
+				INFOPLIST_FILE = WNetSpeedSampleCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wally.WNetSpeedSampleCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WNetSpeedSampleCode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69750814241513BA00B694E0 /* Build configuration list for PBXProject "WNetSpeedSampleCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69750841241513BB00B694E0 /* Debug */,
+				69750842241513BB00B694E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69750843241513BB00B694E0 /* Build configuration list for PBXNativeTarget "WNetSpeedSampleCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69750844241513BB00B694E0 /* Debug */,
+				69750845241513BB00B694E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69750846241513BB00B694E0 /* Build configuration list for PBXNativeTarget "WNetSpeedSampleCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69750847241513BB00B694E0 /* Debug */,
+				69750848241513BB00B694E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69750849241513BB00B694E0 /* Build configuration list for PBXNativeTarget "WNetSpeedSampleCodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6975084A241513BB00B694E0 /* Debug */,
+				6975084B241513BB00B694E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69750811241513BA00B694E0 /* Project object */;
+}
