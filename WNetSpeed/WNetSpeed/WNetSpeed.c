@@ -17,6 +17,7 @@
 #include <signal.h>
 #include <sys/time.h>
 
+#define printf(s,...)
 #define null (void *)0
 
 static int const WNetSpeedZeroCount = 20;
@@ -35,6 +36,7 @@ struct NetSpeedHistory {
     WNetSpeedMode mode;             //모드
     unsigned int cnt;               //카운트
     unsigned long long total;       //전체 합
+    unsigned long long average;     //Average
     unsigned long long speed[WNetSpeedMemoryMax]; //값
     unsigned int zeroCnt;           //종료를 알림
 };
@@ -56,7 +58,7 @@ typedef struct {
 #pragma mark - WNetSpeed Define Function
 
 void WNetCurrentSpeed(void);
-void SetValue(struct NetSpeedHistory *history,unsigned long long value);
+void SetValue(struct NetSpeedHistory *history,unsigned long long value, _Bool isUploadMode);
 
 #pragma mark - WNetSpeed initialized
 void Initialized(struct NetSpeedHistory *history) {
@@ -134,13 +136,13 @@ void WNetCurrentSpeed(void) {
     if (wn->firstTime == 0) {
         unsigned long long speed;
         speed = (wn->downloadData - wn->lastDownloadData)/WNetSpeedCheckDelay;
-        SetValue(wn->downloadSpeeds,speed);
+        SetValue(wn->downloadSpeeds,speed,1);
         if (wn->WNCallback != NULL) {
             wn->WNCallback(speed,1,wn->target);
         }
         
         speed = (wn->uploadData - wn->lastUploadData)/WNetSpeedCheckDelay;
-        SetValue(wn->uploadSpeeds,speed);
+        SetValue(wn->uploadSpeeds,speed,0);
         if (wn->WNCallback != NULL) {
             wn->WNCallback(speed,0,wn->target);
         }
@@ -153,13 +155,13 @@ void WNetCurrentSpeed(void) {
     wn->uploadData = 0;
 }
 
-void SetValue(struct NetSpeedHistory *history,unsigned long long value) {
+void SetValue(struct NetSpeedHistory *history,unsigned long long value, _Bool isDownloadMode) {
     
     //5초 사용검토 후 초기화..
-    if (value == 0) {
+    if (value < 100000) {
         history->zeroCnt++;
         if (history->zeroCnt > WNetSpeedZeroCount) {
-            if (history->mode == WNetSpeedModeDownload) {
+            if (isDownloadMode) {
                 printf("Download Initialized Memory\n");
             }else{
                 printf("Upload Initialized Memory\n");
@@ -167,7 +169,7 @@ void SetValue(struct NetSpeedHistory *history,unsigned long long value) {
             Initialized(history);
             return;
         }
-        if (history->mode == WNetSpeedModeDownload) {
+        if (isDownloadMode) {
             printf("Download zeroCnt : %d\n",history->zeroCnt);
         }else{
             printf("Upload zeroCnt : %d\n",history->zeroCnt);
@@ -180,6 +182,11 @@ void SetValue(struct NetSpeedHistory *history,unsigned long long value) {
         
         //초기화
         Initialized(history);
+    }
+    if (isDownloadMode) {
+        printf("Download Cur : %lld\n",value);
+    }else{
+        printf("Upload Cur : %lld\n",value);
     }
     
     history->speed[history->cnt] = value;
@@ -214,9 +221,10 @@ __attribute__((overloadable)) double AverageCurrentSpeed(WNetSpeedMode mode) {
     WNetSpeed *wn = shareInstance();
     struct NetSpeedHistory *history = mode==WNetSpeedModeUpload?wn->uploadSpeeds:wn->downloadSpeeds;
     if (history->cnt == 0 || history->total == 0) {
-        return 0;
+        return history->average;
     }
-    return history->total / history->cnt;
+    history->average = history->total / history->cnt;
+    return history->average;
 }
 
 __attribute__((overloadable)) double AverageCurrentSpeed(WNetSpeedMode mode, WNetSpeedSize logType) {
